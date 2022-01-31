@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>learn js</title>
+</head>
+<body>
+    <div id="container">
+        <p>Guess a number between 1 and 100.</p>
+        <p id="outputtext">Enter a number below</p>
+        <input type="text" id="userInput">
+        <button id="btn">Enter</button>
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+<!-- 
+    16.01.2022
+    function - vazifa
+    1 step: yaratish
+    function sayHello(name){
+        console.log("hello" + name);
+    }
+
+    2 step: calling - chaqirish
+    sayHello("Nuriddin");
+
+    argument - funksiyani chaqirish davomida (ichida) beradigan qiymat.
+
+ 
+    Global variable: var studentName = "...";
+    Local variable: var teacherName = "...";
+
+    return - biror qiymat qaytaradi
+
+    Homework:
+    1. funksiya yozing shu funksiya har safar sum ismli o'zgaruvchiga 5 qoshsin.
+    2. usha funksiyani 3 marta chaqirsam 15 kelib chiqsin.
+-->
+
+
+<!-- 
+    17.01.2022
+    Array - massive - to'plam
+    var myArray = [223, 434, "df", "&&^&", "rt", ["Jasur", 99]]
+    methods .pop() .push() .shift() .unshift()
+
+
+
+    Homework
+    1. myColors = ["Red", "Green", "White", "Black"];
+    Javobi: "Red, Green, White, Black"
+            "Red+Green+White+Black"
+
+    2. arr1 = [ 3, 8, 7, 6, 5, -4, -3, 2, 1];
+    Javobi: -4, -3, 1, 2, 3, 4, 5, 6, 7, 8
+        
+    3. arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+    Javobi: a ( 5 times )
+
+    4.
+    array1 = [1, 0, 2, 3, 4];
+    array2 = [3, 5, 6, 7, 8, 13];
+    Javobi: [4, 5, 8, 10, 12, 13];
+-->
+
+<!-- 
+
+    19.01.2022
+    if - agar 
+    else - yoki bo'lmasa
+    if(){
+        console.log("you can vote");
+    }else{
+        console.log("you can not vote");
+    }
+ 
+    Task 1:
+    60 dan kattaroq bal pass
+    60 dan kichik bal olsaiz fail
+
+
+    Task 2:
+    soat 10 Good  morning
+    soat 20 Good day
+    soat 18 Good evening
+ 
+    Task 3: Homework
+    1. isShopOpen o'zgaruvchini yarating uni qiymati true yoki false bo'lsin.
+    2. agar magazin ochiq bo'lsa "Shop is open now" ismli text ni chiqaring.
+    3. agar magazin yopiq bo'lsa "Shop is close now" ni chiqaring.
+-->
+
+<!-- 
+    21.01.2022
+    var age = 18
+    switch(age){
+        case 18:
+            console.log("you are 18 years old");
+    }
+
+
+    1st Task:
+    1. value ismli o'zgaruvchi yarating 1 dan 9;
+    1, 2, 3 low
+    4, 5, 6 mid
+    7, 8, 9 high
+ 
+    
+    2nd Task:
+    1.caseInSwitch function yozing fruit parametr qabul qilsin,
+    answer ismli o'zgaruvchi yarating qiymatni esa "";
+    2.switch case yozing agar fruit teng orange ga teng bo'lsa qiymatni answer ga 
+    jo'ylamiza 'Oranges are $0.59 a pound';
+    3. agar fruit apple ga teng bo'lsa 'Apples are $0.32 a pound'
+    agar fruit banana ga teng bo'lsa 'Bananas are $0.48 a pound'
+    agar fruit cherry ga teng bo'lsa 'Cherries are $3.00 a pound'
+    agar fruit mangoes va papayas ga teng bo'lsa 'Mangoes and papayas are $2.79 a pound'
+    agar fruit hech qaysiga teng bo'lmasa
+
+    
+
+    Homework:
+    1.findDayInAWeek function yarating uni parametr da day keladi,
+    2.function ichida dayOfTheWeek ismli o'zgaruvchi yarating,
+    3.switch case yozing agar day 0 ga teng bo'lsa 'Sunday',
+    4.agar day 1 ga teng bo'lsa 'Monday' stringni dayOfTheWeek ga saqlaysiz
+    5.agar day 2 ga teng bo'lsa 'Tuestday'  stringni dayOfTheWeek ga saqlaysiz
+    6.agar day 3 ga teng bo'lsa 'Wednesday'  stringni dayOfTheWeek ga saqlaysiz
+    7.agar day 4 ga teng bo'lsa 'Thursday'  stringni dayOfTheWeek ga saqlaysiz
+    8.agar day 5 ga teng bo'lsa 'Friday'  stringni dayOfTheWeek ga saqlaysiz
+    9.agar day 6 ga teng bo'lsa 'Saturday'  stringni dayOfTheWeek ga saqlaysiz
+    dayOfTheWeek ni qaytarishiz kerak;
+    console.log(findDayOfTheWeek(0))
+-->
+
+<!-- 
+    23.01.2022
+    Object - abyekt
+    var person = {
+        name: 'Jasur'
+    }
+    key: value, property - mulk, 
+    Updating object properties
+    person.name = "Javlon",
+
+    adding new key: value
+    mycar: "Jentra"
+    person['myCar'] = "Jentra"
+
+
+    Task 1.
+    1. checkMyObj funksiya yozing parametriga checkProp.
+    2. if else yozing person ni ichida age bormi deb shart yozing
+    hasOwnProperty dan foydalaning.
+    3. Agar age person ichida mavjud bo'lsa console ga age bor ekan.
+    4. aks holda age console ga age topilmadi deb chiqaring.
+
+
+    Homework
+    1. countries object ni yangi newCloneOfObj ismli object ga copy qilishingiz kerak.
+    2. countries ni console ga chiqarasiz.
+    3. newCloneOfObj ni console ga chiqarasiz.
+ -->
+
+
+
+<!-- 
+    26.01.2022
+    loop - sikle - charxpalak
+    for loop, while loop, do while loop
+    Task 1:
+    1. sayHello ismli function yozing 1 bir parametr qabul qilsin. uni ismi name bo'lsin
+    2. while dan foydalaning va name ga 16 marta Assalomualaykum name.
+
+    Homework:
+    var myArrNumbers = [23, 5, 23, 8, 8, 4, 5, 2, 0, 7, 1, 11, 15, 96];
+    1. myArrNumbers ismli array sizga beriladi.
+    2. totalSum ismli o'zgaruvchi yarating.
+    3. sumMyArrNumbers ismli function yarating.
+    4. sumMyArrNumbers shu function ichida array ni element larini
+       qushish kerak va totalSum degan o'zgaruvchida jamlangan qiymatizni saqlaysiz.
+    5. sumMyArrNumbers shu function ni chiqarasiz.
+    6. console ga totalSum ni chiqaring.
+-->
+
+
+<!-- 
+    Mavzu: Taxminiy numerni yetqazib berish:
+    Math.random();
+    Task 1:
+    0 dan 100 gacha random number ni console ga chiqaring.
+    Methods
+    Math.floor();
+
+    Homework 1:
+    getFromMinMax(20, 40)
+
+    1. getFromMinMax ismli function yozing.
+    2. Math.random(); shuni function ichida yozing va
+    berilgan raqamni tasodifiy tanlab berishiz kerak.
+    3. Faqat butun bir dona son chiqsin.
+
+    Homework 2:
+ -->
